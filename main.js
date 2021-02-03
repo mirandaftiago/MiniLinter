@@ -8,13 +8,13 @@ let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 let storyWords = story.split(' ');
 
 //#2
-console.log(storyWords.length);
+//console.log(storyWords.length);
 
 //#3
 let betterWords = storyWords.filter(function(word) {
   return !unnecessaryWords.includes(word)
 });
-console.log(betterWords);
+//console.log(betterWords);
 
 //#4
 let reallyCount = 0;
@@ -30,7 +30,7 @@ for (word of storyWords) {
     basicallyCount += 1;
   }
 }
-console.log(`Really count: ${reallyCount}, Very Count: ${veryCount}, Basically count: ${basicallyCount}`);
+//console.log(`Really count: ${reallyCount}, Very Count: ${veryCount}, Basically count: ${basicallyCount}`);
 
 //#5
 let sentences = 0;
@@ -40,5 +40,12 @@ storyWords.forEach(function(word) {
     sentences += 1;
   }
 });
-console.log(`Number of sentences is: ${sentences}.`)
+//console.log(`Number of sentences is: ${sentences}.`)
+
 //#6
+  console.log('Number of words: ' + storyWords.length);
+  console.log('Number of sentences: ' + sentences);
+  console.log(`Really count: ${reallyCount}, Very Count: ${veryCount}, Basically count: ${basicallyCount}\n`);
+
+//#7
+console.log(betterWords.join(" "))
